@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  position: relative;
+  font-family: 'Open Sans', sans-serif; }
+  header .nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 75px;
+    position: absolute; }
+    header .nav .wrapper {
+      display: flex;
+      max-width: 1150px;
+      width: 1150px;
+      align-items: center;
+      margin: auto; }
+      header .nav .wrapper .logo {
+        margin: 0 75px 0 0;
+        padding: 0;
+        color: #fff; }
+      header .nav .wrapper .logo-link {
+        letter-spacing: 2px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: 800; }
+      header .nav .wrapper .ul-nav {
+        margin-right: 30px; }
+        header .nav .wrapper .ul-nav li {
+          display: inline-block;
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 1.1rem;
+          margin: 0 10px;
+          padding: 15px 8px;
+          color: rgba(255, 255, 255, 0.55);
+          transition: 0.3s color ease;
+          cursor: pointer; }
+          header .nav .wrapper .ul-nav li:hover {
+            color: #fff; }
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://noshandchow.se/wp-content/uploads/2019/11/Nosh-and-Chow-Restaurant-28-of-51-SynCreative-1.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh; }
+  .hero .card {
+    color: #fff;
+    margin: auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    text-align: center; }
+    .hero .card h1 {
+      font-size: 7rem;
+      text-transform: uppercase;
+      font-weight: 400;
+      margin: 0; }
+    .hero .card h3 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin: 0;
+      font-family: 'Open Sans', sans-serif; }
+  .hero .buttons {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 15%;
+    font-family: 'Open Sans', sans-serif; }
+    .hero .buttons a {
+      color: #eee;
+      text-decoration: none;
+      border: 1px solid #eee;
+      padding: 15px 40px;
+      margin: 0 10px; }
+
+.photo .bg-image {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://houstonfoodfinder.com/wp-content/uploads/2018/11/Patrick1-copy.jpg") no-repeat center bottom;
+  background-size: cover;
+  height: 66vh; }
+  .photo .bg-image .our-menu {
+    position: absolute;
+    margin-bottom: 5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .photo .bg-image .our-menu h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 4rem;
+      font-weight: 400;
+      margin: auto;
+      text-align: center;
+      color: white; }
+
+#menu {
+  font-family: 'Oswald', sans-serif;
+  padding: 170px 0; }
+  #menu .wrapper {
+    width: 1150px;
+    max-width: 1150px;
+    margin: auto; }
+    #menu .wrapper .menu-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 45px;
+      margin-bottom: 10rem; }
+      #menu .wrapper .menu-grid .image {
+        background: url("https://prod-wolt-venue-images-cdn.wolt.com/5aa2c753ee78d9000b05f499/74909a80c072327437048aa18fc071f2") no-repeat center center;
+        background-size: cover;
+        height: 370px; }
+      #menu .wrapper .menu-grid .image:nth-of-type(2) {
+        background: url("https://prod-wolt-venue-images-cdn.wolt.com/5aa2c753ee78d9000b05f499/74909a80c072327437048aa18fc071f2") no-repeat center center;
+        background-size: cover; }
+      #menu .wrapper .menu-grid .menu-info h3 {
+        display: inline-block;
+        text-transform: uppercase;
+        color: white;
+        background: #363636;
+        font-size: 20px;
+        padding: 4px 8px;
+        margin-bottom: 20px; }
+      #menu .wrapper .menu-grid .menu-info .title-price {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px; }
+        #menu .wrapper .menu-grid .menu-info .title-price h4 {
+          font-weight: 400;
+          font-size: 17px; }
+        #menu .wrapper .menu-grid .menu-info .title-price .dotnet {
+          color: #eee; }
+      #menu .wrapper .menu-grid .menu-info .item-info p {
+        font-size: 12.6px;
+        line-height: 1.7;
+        color: grey;
+        font-weight: 300;
+        font-family: Arial, Helvetica, sans-serif; }
+    #menu .wrapper .menu-grid:nth-of-type(2) {
+      margin-bottom: 0; }
+
+.photo-2 .bg-image {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://images.unsplash.com/photo-1501735972267-d5c1bc03655c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 66vh; }
+  .photo-2 .bg-image .booking {
+    position: absolute;
+    margin-bottom: 5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .photo-2 .bg-image .booking h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 4rem;
+      font-weight: 400;
+      margin: auto;
+      text-align: center;
+      color: white; }
+
+#booking {
+  padding: 110px 0; }
+  #booking .wrapper {
+    width: 1100px;
+    max-width: 1100px;
+    margin: auto; }
+    #booking .wrapper .booking-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      grid-gap: 45px;
+      font-family: 'Open Sans', sans-serif; }
+      #booking .wrapper .booking-grid .booking-info .booking-text {
+        color: #414141;
+        display: flex;
+        flex-direction: column; }
+        #booking .wrapper .booking-grid .booking-info .booking-text p {
+          line-height: 1.6; }
+        #booking .wrapper .booking-grid .booking-info .booking-text .book-btn {
+          display: inline-block;
+          text-align: center;
+          width: 175px;
+          margin: 35px auto 0;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: white;
+          background: #303030;
+          padding: 20px 0;
+          font-weight: 600; }
+      #booking .wrapper .booking-grid .booking-time {
+        text-align: center;
+        color: #414141; }
+        #booking .wrapper .booking-grid .booking-time h4 {
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 17px;
+          letter-spacing: 1px;
+          margin-bottom: 23px; }
+        #booking .wrapper .booking-grid .booking-time p {
+          text-transform: capitalize;
+          font-size: 14px;
+          font-weight: 600;
+          margin-bottom: 23px; }
+        #booking .wrapper .booking-grid .booking-time ul {
+          list-style: none; }
+          #booking .wrapper .booking-grid .booking-time ul li {
+            margin-bottom: 23px;
+            font-size: 13px;
+            font-weight: 500; }
+
+#welcome {
+  height: 80vh;
+  font-family: 'Open Sans', sans-serif; }
+  #welcome .wrapper {
+    width: 1100px;
+    max-width: 1100px;
+    margin: 0 auto; }
+    #welcome .wrapper .welcome-info {
+      padding: 150px 0 20px;
+      text-align: center; }
+      #welcome .wrapper .welcome-info h2 {
+        margin-bottom: 30px;
+        font-size: 4rem; }
+      #welcome .wrapper .welcome-info p {
+        line-height: 1.7; }
+      #welcome .wrapper .welcome-info p:first-of-type {
+        margin-bottom: 20px; }
+
+/*# sourceMappingURL=styles.css.map */
