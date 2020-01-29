@@ -1,10 +1,11 @@
 .photo {
   .bg-image {
     position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url('https://houstonfoodfinder.com/wp-content/uploads/2018/11/Patrick1-copy.jpg')
-        no-repeat center bottom;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+      url('https://www.experiencedays.co.uk/images/Learn%20How%20To%20Make%20Sushi%20Workshop%20In%20Glasgow-1920x1080-resize.jpg')
+        no-repeat center center;
     background-size: cover;
+    background-attachment: fixed;
     height: 66vh;
     .our-menu {
       position: absolute;

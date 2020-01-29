@@ -87,8 +87,9 @@ header {
 
 .photo .bg-image {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://houstonfoodfinder.com/wp-content/uploads/2018/11/Patrick1-copy.jpg") no-repeat center bottom;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://www.experiencedays.co.uk/images/Learn%20How%20To%20Make%20Sushi%20Workshop%20In%20Glasgow-1920x1080-resize.jpg") no-repeat center center;
   background-size: cover;
+  background-attachment: fixed;
   height: 66vh; }
   .photo .bg-image .our-menu {
     position: absolute;
@@ -236,5 +237,22 @@ header {
         line-height: 1.7; }
       #welcome .wrapper .welcome-info p:first-of-type {
         margin-bottom: 20px; }
+
+footer {
+  font-family: 'Open Sans', sans-serif;
+  padding: 100px;
+  background: #1a1a1a;
+  color: #fff;
+  font-weight: 300;
+  position: relative; }
+  footer .wrapper {
+    width: 1100px;
+    max-width: 1100px;
+    margin: 0 auto; }
+    footer .wrapper span {
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      transform: translate(-50%, 0); }
 
 /*# sourceMappingURL=styles.css.map */

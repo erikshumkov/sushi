@@ -1,0 +1,19 @@
+footer {
+  font-family: 'Open Sans', sans-serif;
+  padding: 100px;
+  background: rgb(26, 26, 26);
+  color: #fff;
+  font-weight: 300;
+  position: relative;
+  .wrapper {
+    width: 1100px;
+    max-width: 1100px;
+    margin: 0 auto;
+    span {
+      position: absolute;
+      bottom: 5%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+}
