@@ -61,3 +61,16 @@
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  #booking {
+    .wrapper {
+      width: 95%;
+      max-width: 95%;
+      .booking-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 5rem;
+      }
+    }
+  }
+}
