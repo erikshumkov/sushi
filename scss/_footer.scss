@@ -1,6 +1,6 @@
 footer {
   font-family: 'Open Sans', sans-serif;
-  padding: 100px;
+  padding: 100px 0 100px;
   background: rgb(26, 26, 26);
   color: #fff;
   font-weight: 300;
@@ -9,11 +9,98 @@ footer {
     width: 1100px;
     max-width: 1100px;
     margin: 0 auto;
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 10px;
+      justify-items: center;
+      .menu {
+        ul {
+          list-style: none;
+          li {
+            text-transform: uppercase;
+            font-weight: 600;
+            margin: 0 0 15px 0;
+            color: rgba(255, 255, 255, 0.55);
+            font-size: 14px;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: 0.3s color ease;
+            &:hover {
+              color: rgba(255, 255, 255, 1);
+            }
+          }
+        }
+      }
+      .social {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .social-heading {
+          text-transform: uppercase;
+          margin-bottom: 25px;
+          text-align: center;
+          h4 {
+            font-weight: 600;
+            font-size: 13px;
+            letter-spacing: 4px;
+            color: rgba(255, 255, 255, 0.55);
+          }
+        }
+        .social-icons {
+          display: flex;
+          justify-content: center;
+          .facebook,
+          .twitter,
+          .instagram {
+            cursor: pointer;
+            margin: 0 27px;
+            color: rgba(255, 255, 255, 0.55);
+            transition: 0.3s color ease;
+            &:hover {
+              color: rgba(255, 255, 255, 1);
+            }
+          }
+        }
+      }
+      .contact {
+        .telephone {
+          font-weight: 700;
+          font-size: 11px;
+          margin-bottom: 10px;
+          letter-spacing: 3px;
+        }
+        .email {
+          font-weight: 600;
+          font-size: 11px;
+          margin-bottom: 25px;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+        }
+        ul {
+          list-style: none;
+          li {
+            font-size: 11px;
+            margin-bottom: 8px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.55);
+          }
+          li:nth-of-type(2),
+          li:nth-of-type(3) {
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
     span {
       position: absolute;
-      bottom: 5%;
+      bottom: 10%;
       left: 50%;
       transform: translate(-50%, 0);
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 11px;
+      font-weight: 600;
     }
   }
 }

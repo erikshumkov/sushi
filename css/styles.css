@@ -65,25 +65,32 @@ header {
     .hero .card h1 {
       font-size: 7rem;
       text-transform: uppercase;
+      letter-spacing: 7px;
       font-weight: 400;
-      margin: 0; }
+      margin: 0;
+      font-family: 'Oswald', sans-serif; }
     .hero .card h3 {
       font-size: 1.5rem;
       font-weight: 400;
-      margin: 0;
-      font-family: 'Open Sans', sans-serif; }
+      margin: -20px 0 0 0;
+      letter-spacing: 1px;
+      font-family: 'Oswald', sans-serif; }
   .hero .buttons {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    bottom: 15%;
+    bottom: 10%;
     font-family: 'Open Sans', sans-serif; }
     .hero .buttons a {
-      color: #eee;
+      color: #b4b4b4;
       text-decoration: none;
       border: 1px solid #eee;
       padding: 15px 40px;
-      margin: 0 10px; }
+      margin: 0 10px;
+      transition: 0.3s all ease; }
+      .hero .buttons a:hover {
+        color: #fff;
+        background: rgba(0, 0, 0, 0.8); }
 
 .photo .bg-image {
   position: relative;
@@ -122,7 +129,7 @@ header {
         background-size: cover;
         height: 370px; }
       #menu .wrapper .menu-grid .image:nth-of-type(2) {
-        background: url("https://prod-wolt-venue-images-cdn.wolt.com/5aa2c753ee78d9000b05f499/74909a80c072327437048aa18fc071f2") no-repeat center center;
+        background: url("https://imgs.letsdeal.com/1a37497f-13a6-48c7-ad89-8d4d769337c4?scale=both&width=720&height=480&mode=crop&format=jpeg") no-repeat center center;
         background-size: cover; }
       #menu .wrapper .menu-grid .menu-info h3 {
         display: inline-block;
@@ -152,7 +159,7 @@ header {
 
 .photo-2 .bg-image {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://images.unsplash.com/photo-1501735972267-d5c1bc03655c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://www.matochresebloggen.se/wp-content/uploads/2018/04/img_1346-1150x862.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   height: 66vh; }
@@ -187,12 +194,13 @@ header {
         display: flex;
         flex-direction: column; }
         #booking .wrapper .booking-grid .booking-info .booking-text p {
-          line-height: 1.6; }
+          line-height: 1.6;
+          margin-bottom: 20px; }
         #booking .wrapper .booking-grid .booking-info .booking-text .book-btn {
           display: inline-block;
           text-align: center;
           width: 175px;
-          margin: 35px auto 0;
+          margin: 20px auto 0;
           text-transform: uppercase;
           text-decoration: none;
           color: white;
@@ -228,7 +236,7 @@ header {
     max-width: 1100px;
     margin: 0 auto; }
     #welcome .wrapper .welcome-info {
-      padding: 150px 0 20px;
+      padding: 120px 0;
       text-align: center; }
       #welcome .wrapper .welcome-info h2 {
         margin-bottom: 30px;
@@ -240,7 +248,7 @@ header {
 
 footer {
   font-family: 'Open Sans', sans-serif;
-  padding: 100px;
+  padding: 100px 0 100px;
   background: #1a1a1a;
   color: #fff;
   font-weight: 300;
@@ -249,10 +257,80 @@ footer {
     width: 1100px;
     max-width: 1100px;
     margin: 0 auto; }
+    footer .wrapper .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 10px;
+      justify-items: center; }
+      footer .wrapper .footer-grid .menu ul {
+        list-style: none; }
+        footer .wrapper .footer-grid .menu ul li {
+          text-transform: uppercase;
+          font-weight: 600;
+          margin: 0 0 15px 0;
+          color: rgba(255, 255, 255, 0.55);
+          font-size: 14px;
+          letter-spacing: 2px;
+          cursor: pointer;
+          transition: 0.3s color ease; }
+          footer .wrapper .footer-grid .menu ul li:hover {
+            color: white; }
+      footer .wrapper .footer-grid .social {
+        display: flex;
+        flex-direction: column;
+        width: 100%; }
+        footer .wrapper .footer-grid .social .social-heading {
+          text-transform: uppercase;
+          margin-bottom: 25px;
+          text-align: center; }
+          footer .wrapper .footer-grid .social .social-heading h4 {
+            font-weight: 600;
+            font-size: 13px;
+            letter-spacing: 4px;
+            color: rgba(255, 255, 255, 0.55); }
+        footer .wrapper .footer-grid .social .social-icons {
+          display: flex;
+          justify-content: center; }
+          footer .wrapper .footer-grid .social .social-icons .facebook,
+          footer .wrapper .footer-grid .social .social-icons .twitter,
+          footer .wrapper .footer-grid .social .social-icons .instagram {
+            cursor: pointer;
+            margin: 0 27px;
+            color: rgba(255, 255, 255, 0.55);
+            transition: 0.3s color ease; }
+            footer .wrapper .footer-grid .social .social-icons .facebook:hover,
+            footer .wrapper .footer-grid .social .social-icons .twitter:hover,
+            footer .wrapper .footer-grid .social .social-icons .instagram:hover {
+              color: white; }
+      footer .wrapper .footer-grid .contact .telephone {
+        font-weight: 700;
+        font-size: 11px;
+        margin-bottom: 10px;
+        letter-spacing: 3px; }
+      footer .wrapper .footer-grid .contact .email {
+        font-weight: 600;
+        font-size: 11px;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        letter-spacing: 3px; }
+      footer .wrapper .footer-grid .contact ul {
+        list-style: none; }
+        footer .wrapper .footer-grid .contact ul li {
+          font-size: 11px;
+          margin-bottom: 8px;
+          letter-spacing: 2px;
+          font-weight: 600;
+          color: rgba(255, 255, 255, 0.55); }
+        footer .wrapper .footer-grid .contact ul li:nth-of-type(2),
+        footer .wrapper .footer-grid .contact ul li:nth-of-type(3) {
+          text-transform: uppercase; }
     footer .wrapper span {
       position: absolute;
-      bottom: 5%;
+      bottom: 10%;
       left: 50%;
-      transform: translate(-50%, 0); }
+      transform: translate(-50%, 0);
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 11px;
+      font-weight: 600; }
 
 /*# sourceMappingURL=styles.css.map */
