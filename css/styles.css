@@ -49,6 +49,15 @@ header {
           header .nav .wrapper .ul-nav li:hover {
             color: #fff; }
 
+@media screen and (max-width: 480px) {
+  header .nav .wrapper {
+    max-width: 360px;
+    width: 360px; }
+    header .nav .wrapper .logo-link {
+      font-size: 1.5rem; }
+    header .nav .wrapper .ul-nav li {
+      padding: 15px 5px;
+      font-size: 1rem; } }
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://noshandchow.se/wp-content/uploads/2019/11/Nosh-and-Chow-Restaurant-28-of-51-SynCreative-1.jpg") no-repeat center center;
   background-size: cover;
@@ -94,8 +103,16 @@ header {
 
 @media screen and (max-width: 480px) {
   .hero .buttons {
-    left: 15%;
-    transform: translate(0); } }
+    display: none;
+    width: 100%;
+    height: 100px;
+    bottom: 0; }
+    .hero .buttons a {
+      float: left;
+      margin-left: 20px; }
+    .hero .buttons a:nth-of-type(2) {
+      float: right;
+      margin-right: 20px; } }
 .photo .bg-image {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://www.experiencedays.co.uk/images/Learn%20How%20To%20Make%20Sushi%20Workshop%20In%20Glasgow-1920x1080-resize.jpg") no-repeat center center;
@@ -116,6 +133,9 @@ header {
       text-align: center;
       color: white; }
 
+@media screen and (max-width: 480px) {
+  .photo .bg-image .our-menu h2 {
+    font-size: 3rem; } }
 #menu {
   font-family: 'Oswald', sans-serif;
   padding: 170px 0; }
@@ -203,6 +223,9 @@ header {
       text-align: center;
       color: white; }
 
+@media screen and (max-width: 480px) {
+  .photo-2 .bg-image .booking h2 {
+    font-size: 3rem; } }
 #booking {
   padding: 110px 0; }
   #booking .wrapper {
@@ -286,7 +309,7 @@ header {
       width: 90%;
       max-width: 90%; }
       #welcome .wrapper .welcome-info h2 {
-        font-size: 3rem; } }
+        font-size: 2.4rem; } }
 footer {
   font-family: 'Open Sans', sans-serif;
   padding: 100px 0 100px;
@@ -380,11 +403,13 @@ footer {
   footer .wrapper {
     max-width: 90%; }
     footer .wrapper .footer-grid {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       grid-template-rows: 1fr;
       grid-gap: 40px 25px; }
-      footer .wrapper .footer-grid .social {
-        grid-column: 1 / 3;
+      footer .wrapper .footer-grid .menu ul li {
+        display: inline-block;
+        padding: 0 5px; }
+      footer .wrapper .footer-grid .contact {
         grid-row: 2 / 3; } }
 
 /*# sourceMappingURL=styles.css.map */
