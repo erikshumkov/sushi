@@ -1,0 +1,26 @@
+.photo-2 {
+  .bg-image {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url('https://www.matochresebloggen.se/wp-content/uploads/2018/04/img_1346-1150x862.jpg')
+        no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 66vh;
+    .booking {
+      position: absolute;
+      margin-bottom: 5rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      h2 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 4rem;
+        font-weight: 400;
+        margin: auto;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+}

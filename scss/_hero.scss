@@ -1,0 +1,60 @@
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('https://noshandchow.se/wp-content/uploads/2019/11/Nosh-and-Chow-Restaurant-28-of-51-SynCreative-1.jpg')
+      no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  .card {
+    color: #fff;
+    margin: auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    text-align: center;
+    h1 {
+      font-size: 7rem;
+      text-transform: uppercase;
+      letter-spacing: 7px;
+      font-weight: 400;
+      margin: 0;
+      font-family: 'Oswald', sans-serif;
+    }
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin: -20px 0 0 0;
+      letter-spacing: 1px;
+      font-family: 'Oswald', sans-serif;
+    }
+  }
+  .buttons {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 10%;
+    font-family: 'Open Sans', sans-serif;
+    a {
+      color: rgb(180, 180, 180);
+      text-decoration: none;
+      border: 1px solid #eee;
+      padding: 15px 40px;
+      margin: 0 10px;
+      transition: 0.3s all ease;
+      &:hover {
+        color: #fff;
+        background: rgba(0, 0, 0, 0.8);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    .buttons {
+      left: 15%;
+      transform: translate(0);
+    }
+  }
+}

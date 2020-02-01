@@ -1,0 +1,38 @@
+#welcome {
+  height: 80vh;
+  font-family: 'Open Sans', sans-serif;
+  .wrapper {
+    width: 1100px;
+    max-width: 1100px;
+    margin: 0 auto;
+    .welcome-info {
+      padding: 120px 0;
+      text-align: center;
+      h2 {
+        margin-bottom: 30px;
+        font-size: 4rem;
+      }
+      p {
+        line-height: 1.7;
+      }
+      p:first-of-type {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #welcome {
+    height: initial;
+    .wrapper {
+      width: 90%;
+      max-width: 90%;
+      .welcome-info {
+        h2 {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}

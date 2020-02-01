@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  position: relative;
+  font-family: 'Open Sans', sans-serif; }
+  header .nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 75px;
+    position: absolute; }
+    header .nav .wrapper {
+      display: flex;
+      max-width: 1150px;
+      width: 1150px;
+      align-items: center;
+      margin: auto; }
+      header .nav .wrapper .logo {
+        margin: 0 75px 0 0;
+        padding: 0;
+        color: #fff; }
+      header .nav .wrapper .logo-link {
+        letter-spacing: 2px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: 800; }
+      header .nav .wrapper .ul-nav {
+        margin-right: 30px; }
+        header .nav .wrapper .ul-nav li {
+          display: inline-block;
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 1.1rem;
+          margin: 0 10px;
+          padding: 15px 8px;
+          color: rgba(255, 255, 255, 0.55);
+          transition: 0.3s color ease;
+          cursor: pointer; }
+          header .nav .wrapper .ul-nav li:hover {
+            color: #fff; }
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://noshandchow.se/wp-content/uploads/2019/11/Nosh-and-Chow-Restaurant-28-of-51-SynCreative-1.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh; }
+  .hero .card {
+    color: #fff;
+    margin: auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    text-align: center; }
+    .hero .card h1 {
+      font-size: 7rem;
+      text-transform: uppercase;
+      letter-spacing: 7px;
+      font-weight: 400;
+      margin: 0;
+      font-family: 'Oswald', sans-serif; }
+    .hero .card h3 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin: -20px 0 0 0;
+      letter-spacing: 1px;
+      font-family: 'Oswald', sans-serif; }
+  .hero .buttons {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 10%;
+    font-family: 'Open Sans', sans-serif; }
+    .hero .buttons a {
+      color: #b4b4b4;
+      text-decoration: none;
+      border: 1px solid #eee;
+      padding: 15px 40px;
+      margin: 0 10px;
+      transition: 0.3s all ease; }
+      .hero .buttons a:hover {
+        color: #fff;
+        background: rgba(0, 0, 0, 0.8); }
+
+@media screen and (max-width: 480px) {
+  .hero .buttons {
+    left: 15%;
+    transform: translate(0); } }
+.photo .bg-image {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://www.experiencedays.co.uk/images/Learn%20How%20To%20Make%20Sushi%20Workshop%20In%20Glasgow-1920x1080-resize.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 66vh; }
+  .photo .bg-image .our-menu {
+    position: absolute;
+    margin-bottom: 5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .photo .bg-image .our-menu h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 4rem;
+      font-weight: 400;
+      margin: auto;
+      text-align: center;
+      color: white; }
+
+#menu {
+  font-family: 'Oswald', sans-serif;
+  padding: 170px 0; }
+  #menu .wrapper {
+    width: 1150px;
+    max-width: 1150px;
+    margin: auto; }
+    #menu .wrapper .menu-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 45px;
+      margin-bottom: 10rem; }
+      #menu .wrapper .menu-grid .image {
+        background: url("https://prod-wolt-venue-images-cdn.wolt.com/5aa2c753ee78d9000b05f499/74909a80c072327437048aa18fc071f2") no-repeat center center;
+        background-size: cover;
+        height: 370px; }
+      #menu .wrapper .menu-grid .image:nth-of-type(2) {
+        background: url("https://imgs.letsdeal.com/1a37497f-13a6-48c7-ad89-8d4d769337c4?scale=both&width=720&height=480&mode=crop&format=jpeg") no-repeat center center;
+        background-size: cover; }
+      #menu .wrapper .menu-grid .menu-info h3 {
+        display: inline-block;
+        text-transform: uppercase;
+        color: white;
+        background: #363636;
+        font-size: 20px;
+        padding: 4px 8px;
+        margin-bottom: 20px; }
+      #menu .wrapper .menu-grid .menu-info .title-price {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px; }
+        #menu .wrapper .menu-grid .menu-info .title-price h4 {
+          font-weight: 400;
+          font-size: 17px; }
+        #menu .wrapper .menu-grid .menu-info .title-price .dotnet {
+          color: #eee; }
+      #menu .wrapper .menu-grid .menu-info .item-info p {
+        font-size: 12.6px;
+        line-height: 1.7;
+        color: grey;
+        font-weight: 300;
+        font-family: Arial, Helvetica, sans-serif; }
+    #menu .wrapper .menu-grid:nth-of-type(2) {
+      margin-bottom: 0; }
+
+@media screen and (max-width: 480px) {
+  header .nav .wrapper {
+    max-width: 100%;
+    width: 100%;
+    justify-content: space-around; }
+    header .nav .wrapper .logo {
+      margin: 0; }
+    header .nav .wrapper .ul-nav {
+      margin: 0; }
+      header .nav .wrapper .ul-nav li {
+        margin: 0; } }
+@media screen and (max-width: 480px) {
+  #menu .wrapper {
+    width: 95%;
+    max-width: 95%; }
+    #menu .wrapper .menu-grid {
+      grid-template-columns: 1fr;
+      margin-bottom: 5rem; }
+      #menu .wrapper .menu-grid .menu-info .title-price .dotnet {
+        display: none; }
+    #menu .wrapper .menu-grid:nth-of-type(2) {
+      margin-bottom: 0; } }
+.photo-2 .bg-image {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://www.matochresebloggen.se/wp-content/uploads/2018/04/img_1346-1150x862.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 66vh; }
+  .photo-2 .bg-image .booking {
+    position: absolute;
+    margin-bottom: 5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .photo-2 .bg-image .booking h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 4rem;
+      font-weight: 400;
+      margin: auto;
+      text-align: center;
+      color: white; }
+
+#booking {
+  padding: 110px 0; }
+  #booking .wrapper {
+    width: 1100px;
+    max-width: 1100px;
+    margin: auto; }
+    #booking .wrapper .booking-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      grid-gap: 45px;
+      font-family: 'Open Sans', sans-serif; }
+      #booking .wrapper .booking-grid .booking-info .booking-text {
+        color: #414141;
+        display: flex;
+        flex-direction: column; }
+        #booking .wrapper .booking-grid .booking-info .booking-text p {
+          line-height: 1.6;
+          margin-bottom: 20px; }
+        #booking .wrapper .booking-grid .booking-info .booking-text .book-btn {
+          display: inline-block;
+          text-align: center;
+          width: 175px;
+          margin: 20px auto 0;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: white;
+          background: #303030;
+          padding: 20px 0;
+          font-weight: 600; }
+      #booking .wrapper .booking-grid .booking-time {
+        text-align: center;
+        color: #414141; }
+        #booking .wrapper .booking-grid .booking-time h4 {
+          text-transform: uppercase;
+          font-weight: 600;
+          font-size: 17px;
+          letter-spacing: 1px;
+          margin-bottom: 23px; }
+        #booking .wrapper .booking-grid .booking-time p {
+          text-transform: capitalize;
+          font-size: 14px;
+          font-weight: 600;
+          margin-bottom: 23px; }
+        #booking .wrapper .booking-grid .booking-time ul {
+          list-style: none; }
+          #booking .wrapper .booking-grid .booking-time ul li {
+            margin-bottom: 23px;
+            font-size: 13px;
+            font-weight: 500; }
+
+@media screen and (max-width: 480px) {
+  #booking .wrapper {
+    width: 95%;
+    max-width: 95%; }
+    #booking .wrapper .booking-grid {
+      grid-template-columns: 1fr;
+      grid-gap: 5rem; } }
+#welcome {
+  height: 80vh;
+  font-family: 'Open Sans', sans-serif; }
+  #welcome .wrapper {
+    width: 1100px;
+    max-width: 1100px;
+    margin: 0 auto; }
+    #welcome .wrapper .welcome-info {
+      padding: 120px 0;
+      text-align: center; }
+      #welcome .wrapper .welcome-info h2 {
+        margin-bottom: 30px;
+        font-size: 4rem; }
+      #welcome .wrapper .welcome-info p {
+        line-height: 1.7; }
+      #welcome .wrapper .welcome-info p:first-of-type {
+        margin-bottom: 20px; }
+
+@media screen and (max-width: 480px) {
+  #welcome {
+    height: initial; }
+    #welcome .wrapper {
+      width: 90%;
+      max-width: 90%; }
+      #welcome .wrapper .welcome-info h2 {
+        font-size: 3rem; } }
+footer {
+  font-family: 'Open Sans', sans-serif;
+  padding: 100px 0 100px;
+  background: #1a1a1a;
+  color: #fff;
+  font-weight: 300;
+  position: relative; }
+  footer .wrapper {
+    width: 1100px;
+    max-width: 1100px;
+    margin: 0 auto; }
+    footer .wrapper .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 10px;
+      justify-items: center; }
+      footer .wrapper .footer-grid .menu ul {
+        list-style: none; }
+        footer .wrapper .footer-grid .menu ul li {
+          text-transform: uppercase;
+          font-weight: 600;
+          margin: 0 0 15px 0;
+          color: rgba(255, 255, 255, 0.55);
+          font-size: 14px;
+          letter-spacing: 2px;
+          cursor: pointer;
+          transition: 0.3s color ease; }
+          footer .wrapper .footer-grid .menu ul li:hover {
+            color: white; }
+      footer .wrapper .footer-grid .social {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        grid-column: inherit;
+        grid-row: inherit; }
+        footer .wrapper .footer-grid .social .social-heading {
+          text-transform: uppercase;
+          margin-bottom: 25px;
+          text-align: center; }
+          footer .wrapper .footer-grid .social .social-heading h4 {
+            font-weight: 600;
+            font-size: 13px;
+            letter-spacing: 4px;
+            color: rgba(255, 255, 255, 0.55); }
+        footer .wrapper .footer-grid .social .social-icons {
+          display: flex;
+          justify-content: center; }
+          footer .wrapper .footer-grid .social .social-icons .facebook,
+          footer .wrapper .footer-grid .social .social-icons .twitter,
+          footer .wrapper .footer-grid .social .social-icons .instagram {
+            cursor: pointer;
+            margin: 0 27px;
+            color: rgba(255, 255, 255, 0.55);
+            transition: 0.3s color ease; }
+            footer .wrapper .footer-grid .social .social-icons .facebook:hover,
+            footer .wrapper .footer-grid .social .social-icons .twitter:hover,
+            footer .wrapper .footer-grid .social .social-icons .instagram:hover {
+              color: white; }
+      footer .wrapper .footer-grid .contact .telephone {
+        font-weight: 700;
+        font-size: 11px;
+        margin-bottom: 10px;
+        letter-spacing: 3px; }
+      footer .wrapper .footer-grid .contact .email {
+        font-weight: 600;
+        font-size: 11px;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        letter-spacing: 3px; }
+      footer .wrapper .footer-grid .contact ul {
+        list-style: none; }
+        footer .wrapper .footer-grid .contact ul li {
+          font-size: 11px;
+          margin-bottom: 8px;
+          letter-spacing: 2px;
+          font-weight: 600;
+          color: rgba(255, 255, 255, 0.55); }
+        footer .wrapper .footer-grid .contact ul li:nth-of-type(2),
+        footer .wrapper .footer-grid .contact ul li:nth-of-type(3) {
+          text-transform: uppercase; }
+    footer .wrapper span {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 11px;
+      font-weight: 600; }
+
+@media screen and (max-width: 480px) {
+  footer .wrapper {
+    max-width: 90%; }
+    footer .wrapper .footer-grid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-gap: 40px 25px; }
+      footer .wrapper .footer-grid .social {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3; } }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,105 @@
+#menu {
+  font-family: 'Oswald', sans-serif;
+  padding: 170px 0;
+  .wrapper {
+    width: 1150px;
+    max-width: 1150px;
+    margin: auto;
+    .menu-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 45px;
+      margin-bottom: 10rem;
+      .image {
+        background: url('https://prod-wolt-venue-images-cdn.wolt.com/5aa2c753ee78d9000b05f499/74909a80c072327437048aa18fc071f2')
+          no-repeat center center;
+        background-size: cover;
+        height: 370px;
+      }
+      .image:nth-of-type(2) {
+        background: url('https://imgs.letsdeal.com/1a37497f-13a6-48c7-ad89-8d4d769337c4?scale=both&width=720&height=480&mode=crop&format=jpeg')
+          no-repeat center center;
+        background-size: cover;
+      }
+      .menu-info {
+        h3 {
+          display: inline-block;
+          text-transform: uppercase;
+          color: white;
+          background: rgb(54, 54, 54);
+          font-size: 20px;
+          padding: 4px 8px;
+          margin-bottom: 20px;
+        }
+        .title-price {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 10px;
+          h4 {
+            font-weight: 400;
+            font-size: 17px;
+          }
+          .dotnet {
+            color: #eee;
+          }
+        }
+        .item-info {
+          p {
+            font-size: 12.6px;
+            line-height: 1.7;
+            color: grey;
+            font-weight: 300;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+        }
+      }
+    }
+    .menu-grid:nth-of-type(2) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    .nav {
+      .wrapper {
+        max-width: 100%;
+        width: 100%;
+        justify-content: space-around;
+        .logo {
+          margin: 0;
+        }
+        .ul-nav {
+          margin: 0;
+          li {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #menu {
+    .wrapper {
+      width: 95%;
+      max-width: 95%;
+      .menu-grid {
+        grid-template-columns: 1fr;
+        margin-bottom: 5rem;
+        .menu-info {
+          .title-price {
+            .dotnet {
+              display: none;
+            }
+          }
+        }
+      }
+      .menu-grid:nth-of-type(2) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
