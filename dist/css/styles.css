@@ -49,7 +49,7 @@ header {
           header .nav .wrapper .ul-nav li:hover {
             color: #fff; }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   header .nav .wrapper {
     max-width: 360px;
     width: 360px; }
@@ -58,6 +58,9 @@ header {
     header .nav .wrapper .ul-nav li {
       padding: 15px 5px;
       font-size: 1rem; } }
+@media screen and (min-width: 641px) and (max-width: 1150px) {
+  header .nav {
+    padding-left: 40px; } }
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://noshandchow.se/wp-content/uploads/2019/11/Nosh-and-Chow-Restaurant-28-of-51-SynCreative-1.jpg") no-repeat center center;
   background-size: cover;
@@ -101,7 +104,7 @@ header {
         color: #fff;
         background: rgba(0, 0, 0, 0.8); }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   .hero .buttons {
     display: none;
     width: 100%;
@@ -133,7 +136,7 @@ header {
       text-align: center;
       color: white; }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .photo .bg-image .our-menu h2 {
     font-size: 3rem; } }
 #menu {
@@ -181,7 +184,7 @@ header {
     #menu .wrapper .menu-grid:nth-of-type(2) {
       margin-bottom: 0; }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   header .nav .wrapper {
     max-width: 100%;
     width: 100%;
@@ -192,12 +195,23 @@ header {
       margin: 0; }
       header .nav .wrapper .ul-nav li {
         margin: 0; } }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   #menu .wrapper {
     width: 95%;
     max-width: 95%; }
     #menu .wrapper .menu-grid {
       grid-template-columns: 1fr;
+      margin-bottom: 5rem; }
+      #menu .wrapper .menu-grid .menu-info .title-price .dotnet {
+        display: none; }
+    #menu .wrapper .menu-grid:nth-of-type(2) {
+      margin-bottom: 0; } }
+@media screen and (min-width: 769px) and (max-width: 1185px) {
+  #menu .wrapper {
+    width: 95%;
+    max-width: 95%; }
+    #menu .wrapper .menu-grid {
+      grid-template-columns: 1fr 1fr;
       margin-bottom: 5rem; }
       #menu .wrapper .menu-grid .menu-info .title-price .dotnet {
         display: none; }
@@ -223,7 +237,7 @@ header {
       text-align: center;
       color: white; }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .photo-2 .bg-image .booking h2 {
     font-size: 3rem; } }
 #booking {
@@ -277,13 +291,18 @@ header {
             font-size: 13px;
             font-weight: 500; }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   #booking .wrapper {
     width: 95%;
     max-width: 95%; }
     #booking .wrapper .booking-grid {
       grid-template-columns: 1fr;
       grid-gap: 5rem; } }
+@media screen and (min-width: 641px) and (max-width: 1150px) {
+  #booking .wrapper {
+    max-width: 90%; }
+    #booking .wrapper .booking-grid {
+      grid-template-columns: 1fr 1fr; } }
 #welcome {
   height: 80vh;
   font-family: 'Open Sans', sans-serif; }
@@ -302,7 +321,7 @@ header {
       #welcome .wrapper .welcome-info p:first-of-type {
         margin-bottom: 20px; }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   #welcome {
     height: initial; }
     #welcome .wrapper {
@@ -310,6 +329,14 @@ header {
       max-width: 90%; }
       #welcome .wrapper .welcome-info h2 {
         font-size: 2.4rem; } }
+@media screen and (min-width: 769px) and (max-width: 1150px) {
+  #welcome {
+    height: initial; }
+    #welcome .wrapper {
+      width: 90%;
+      max-width: 90%; }
+      #welcome .wrapper .welcome-info h2 {
+        font-size: 4rem; } }
 footer {
   font-family: 'Open Sans', sans-serif;
   padding: 100px 0 100px;
@@ -399,7 +426,7 @@ footer {
       font-size: 11px;
       font-weight: 600; }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   footer .wrapper {
     max-width: 90%; }
     footer .wrapper .footer-grid {
@@ -411,5 +438,17 @@ footer {
         padding: 0 5px; }
       footer .wrapper .footer-grid .contact {
         grid-row: 2 / 3; } }
+@media screen and (min-width: 641px) and (max-width: 1050px) {
+  footer .wrapper {
+    width: 95%; }
+    footer .wrapper .footer-grid {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 50px 20px; }
+      footer .wrapper .footer-grid .menu ul li {
+        display: block;
+        padding: 0; }
+      footer .wrapper .footer-grid .social {
+        grid-row: 2 / 3;
+        grid-column: 1 / 4; } }
 
 /*# sourceMappingURL=styles.css.map */
