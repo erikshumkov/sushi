@@ -66,8 +66,11 @@ header {
         }
         .ul-nav {
           li {
-            padding: 15px 5px;
+            padding: 0;
             font-size: 1rem;
+            a {
+              margin: 0;
+            }
           }
         }
       }
