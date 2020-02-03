@@ -20,14 +20,16 @@ footer {
           li {
             text-transform: uppercase;
             font-weight: 600;
-            margin: 0 0 15px 0;
-            color: rgba(255, 255, 255, 0.55);
             font-size: 14px;
             letter-spacing: 2px;
-            cursor: pointer;
-            transition: 0.3s color ease;
-            &:hover {
-              color: rgba(255, 255, 255, 1);
+            margin: 0 0 15px 0;
+            a {
+              color: rgba(255, 255, 255, 0.55);
+              transition: 0.3s color ease;
+              text-decoration: none;
+              &:hover {
+                color: rgba(255, 255, 255, 1);
+              }
             }
           }
         }
