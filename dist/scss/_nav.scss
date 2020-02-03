@@ -39,13 +39,15 @@ header {
           text-transform: uppercase;
           font-weight: 600;
           font-size: 1.1rem;
-          margin: 0 10px;
-          padding: 15px 8px;
-          color: rgba(255, 255, 255, 0.55);
-          transition: 0.3s color ease;
-          cursor: pointer;
-          &:hover {
-            color: #fff;
+          a {
+            margin: 0 10px;
+            padding: 15px 8px;
+            color: rgba(255, 255, 255, 0.55);
+            text-decoration: none;
+            transition: 0.3s color ease;
+            &:hover {
+              color: #fff;
+            }
           }
         }
       }
